@@ -1,0 +1,268 @@
+$nav-bar-grey: #343434;
+$nav-bar-blue-hover: #293659;
+$nav-bar-font: #fff;
+$paragraph-color-grey: #505050;
+$footer-color-grey: #f1f1f1;
+
+
+@font-face{
+  font-family: Flama;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/Flama-basic.otf);
+}
+
+ul {
+    margin:0;
+    padding: 0;
+}
+
+body{
+  font-family: Flama, Helvetica, Arial, sans-serif;
+  width:1020px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//head.html logo
+.logo-img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.centered{
+  padding-left: 10px;
+  float:left;
+}
+
+//head.html nav
+nav.nav-bar{
+  padding-top: 20px;
+  ul{
+    list-style:none;
+    li{
+      display:inline;
+      font-size: 0;
+    }
+    li:last-child{
+      padding-left: 1px;
+    }
+  }
+
+  a{
+    color: $nav-bar-font;
+    display:inline-block;
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right:8px;
+    padding-left:8px;
+    background-color: $nav-bar-grey;
+  }
+
+  a:hover{
+    background-color: $nav-bar-blue-hover;
+  }
+}
+
+.breadcrumb{
+  list-style: none;
+  font-size: 0;
+  padding-top: 12px;
+  li{
+    display:inline;
+    font-size: 12px;
+    a{
+      text-decoration: none;
+      color:grey;
+    }
+  }
+  li+li:before{
+    padding:5px;
+    color:grey;
+    content: ">";
+  }
+}
+
+#heroImage{
+  width:60%;
+  padding-top: 10px;
+
+  float:left;
+  img.hero-img{
+      margin:auto;
+      padding-left: 100px;
+  }
+
+  ul.hero-scroll{
+    display:block;
+    padding-left: 100px;
+    float:left;
+    li{
+      display:inline-block;
+    }
+    img{
+      border: 2px solid white;
+    }
+    .selected{
+      border: 2px solid black;
+    }
+  }
+}
+
+#heroDescription{
+  float:left;
+  width:40%;
+  h1{
+    font-size: 20px;
+    font-family: "Times New Roman",Georgia,serif;
+    font-weight: 400;
+  }
+  p{
+    font-size: 13px;
+    color: $paragraph-color-grey;
+  }
+  ul{
+    padding-left: 30px;
+  }
+  li{
+    font-size: 13px;
+    color: $paragraph-color-grey;
+  }
+
+  span{
+    font-family:Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .price{
+    padding-top:20px;
+  }
+
+  //styles for selecting number of products
+  input[type=number] {
+    font-size: 14px;
+    width: 66px;
+    padding-left:22px;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-right:4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .add-to-cart{
+    padding-top:20px;
+  }
+
+  //Styles for hr
+  .lighter{
+    border:0;
+    height:1px;
+    background: #ccc;
+  }
+  .bold{
+    border:0;
+    height:2px;
+    background: #000;
+  }
+
+  .expandable-info{
+    width:100%;
+
+    img{
+      float:left;
+      padding-top: 5px;
+      padding-right:5px;
+    }
+    h1{
+      position: relative;
+      margin-bottom:5px;
+      margin-top:10px;
+    }
+  }
+
+  #accordion{
+    padding-top: 10px;
+    p{
+      margin-top:4px;
+      margin-bottom:4px;
+    }
+
+    .hidden{
+      padding: 0 18px;
+      background-color: white;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+
+    .close {
+      color: #aaaaaa;
+      float: right;
+      padding-top:6px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover{
+      color:#666;
+      cursor: pointer;
+    }
+
+}
+
+
+footer{
+  display: inline-block;
+  text-align: center;
+  width:1020px;
+  background-color: $footer-color-grey;
+  hr{
+    margin-top:1px;
+    margin-bottom:12px;
+  }
+  a{
+    text-decoration: none;
+    color: $paragraph-color-grey;
+  }
+  ul{
+    width:100%;
+    font-size:10px;
+    font-family: Flama,Helvetica,Arial,sans-serif;
+    padding-bottom: 14px;
+    li{
+      display:inline-block;
+    }
+  }
+
+}
