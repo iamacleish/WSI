@@ -1,101 +1,105 @@
 
-<!--Hero image and scrollbar to toggle displayed image-->
-<section id="heroImage">
-  <img id="hero-img-src" class="hero-img" src="assets/jpg/product-large-a.jpg">
-  <ul class="hero-scroll">
-    <li>
-      <img onclick="changeImage(id)" id="product-small-a" class="selected" src="assets/jpg/product-small-a.jpg">
-    </li>
-    <li>
-      <img onclick="changeImage(id)" id="product-small-b" src="assets/jpg/product-small-b.jpg">
-    </li>
-    <li>
-      <img onclick="changeImage(id)" id="product-small-c" src="assets/jpg/product-small-c.jpg">
-    </li>
-    <li>
-      <img onclick="changeImage(id)" id="product-small-d" src="assets/jpg/product-small-d.jpg">
-    </li>
-  </ul>
-</section>
+      <!--Hero image and scrollbar to toggle displayed image-->
+      <section id="heroImage">
+        <img id="hero-img-src" class="hero-img" src="assets/jpg/product-large-a.jpg">
+        <ul class="hero-scroll">
+          <li>
+            <img onclick="changeImage(id)" id="product-small-a" class="selected" src="assets/jpg/product-small-a.jpg">
+          </li>
+          <li>
+            <img onclick="changeImage(id)" id="product-small-b" src="assets/jpg/product-small-b.jpg">
+          </li>
+          <li>
+            <img onclick="changeImage(id)" id="product-small-c" src="assets/jpg/product-small-c.jpg">
+          </li>
+          <li>
+            <img onclick="changeImage(id)" id="product-small-d" src="assets/jpg/product-small-d.jpg">
+          </li>
+        </ul>
+      </section>
 
-<!-- Information about hero and accordion menu-->
-<section id="heroDescription">
- <div>
-   <h1 id="hero-title">
-     Williams-Sonoma Classic Apron, French Blue
-   </h1>
-   <p>
-     A generously sized apron is a necessity in any kitchen, and ours will brighten
-     yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed
-     with up to nine characters, all the same height, embroidered in your choice of color.
-     An apron of this quality makes a welcome gift for any cook.
-   </p>
-   <ul>
-     <li>Durable 100% cotton construction.</li>
-     <li>Adjustable neckband ensures good fit.</li>
-     <li>Roomy front pockets hold small tools.</li>
-     <li>Machine-wash</li>
-   </ul>
- </div>
+      <!-- Information about hero and accordion menu-->
+      <section id="heroDescription">
+       <div>
+         <h1 id="hero-title">
+           Williams-Sonoma Classic Apron, French Blue
+         </h1>
+         <p>
+           A generously sized apron is a necessity in any kitchen, and ours will brighten
+           yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed
+           with up to nine characters, all the same height, embroidered in your choice of color.
+           An apron of this quality makes a welcome gift for any cook.
+         </p>
+         <ul>
+           <li>Durable 100% cotton construction.</li>
+           <li>Adjustable neckband ensures good fit.</li>
+           <li>Roomy front pockets hold small tools.</li>
+           <li>Machine-wash</li>
+         </ul>
+       </div>
 
- <div class="price">
-   <span>
-     $19.95
-   </span>
- <div>
+       <div class="price">
+         <span>
+           $19.95
+         </span>
+       <div>
 
- <div>
-   <input id="amount-of-product" type="number" value=1 min="1" max="99">
- </div>
- <div class="add-to-cart">
-   <img onclick="purchaseModal()"  src="assets/png/button-add-to-cart.png">
- </div>
 
- <div id="accordion">
-   <hr class="bold"></hr>
+       <!--Input and add to cart-->
+       <div>
+         <input id="amount-of-product" type="number" value=1 min="1" max="99">
+       </div>
+       <div class="add-to-cart">
+         <img onclick="purchaseModal()"  src="assets/png/button-add-to-cart.png">
+       </div>
 
-   <div id="acc1" onclick="expandToggle(id)" class="expandable-info">
-     <img id="acc1Icon" src="assets/icon/arrow-collapsed.png">
-     <h1 id="acc1Header">
-       COLLAPSED
-     </h1>
-   </div>
-   <div id="acc1panel" class="hidden">
-     <p>
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-     </p>
-   </div>
-   <hr class="lighter"></hr>
 
-   <div id="acc2" onclick="expandToggle(id)" class="expandable-info">
-     <img id="acc2Icon"src="assets/icon/arrow-collapsed.png">
-     <h1 id="acc2Header">
-       COLLAPSED
-     </h1>
-   </div>
-   <div id="acc2panel" class="hidden">
-     <p>
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-     </p>
-   </div>
-   <hr class="lighter"></hr>
+       <!--Accordion menu/content -->
+       <div id="accordion">
+         <hr class="bold"></hr>
 
-   <div id="acc3" onclick="expandToggle(id)" class="expandable-info">
-     <img id="acc3Icon" src="assets/icon/arrow-collapsed.png">
-     <h1 id="acc3Header">
-       COLLAPSED
-     </h1>
-   </div>
-   <div id="acc3panel" class="hidden">
-     <p>
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-       This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
-     </p>
-   </div>
+         <div id="acc1" onclick="expandToggle(id)" class="expandable-info">
+           <img id="acc1Icon" src="assets/icon/arrow-collapsed.png">
+           <h1 id="acc1Header">
+             COLLAPSED
+           </h1>
+         </div>
+         <div id="acc1panel" class="hidden">
+           <p>
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+           </p>
+         </div>
+         <hr class="lighter"></hr>
 
-   <hr class="bold"></hr>
+         <div id="acc2" onclick="expandToggle(id)" class="expandable-info">
+           <img id="acc2Icon"src="assets/icon/arrow-collapsed.png">
+           <h1 id="acc2Header">
+             COLLAPSED
+           </h1>
+         </div>
+         <div id="acc2panel" class="hidden">
+           <p>
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+           </p>
+         </div>
+         <hr class="lighter"></hr>
 
- </div>
-</section>
+         <div id="acc3" onclick="expandToggle(id)" class="expandable-info">
+           <img id="acc3Icon" src="assets/icon/arrow-collapsed.png">
+           <h1 id="acc3Header">
+             COLLAPSED
+           </h1>
+         </div>
+         <div id="acc3panel" class="hidden">
+           <p>
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+             This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+           </p>
+         </div>
+
+         <hr class="bold"></hr>
+
+       </div>
+      </section>

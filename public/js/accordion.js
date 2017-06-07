@@ -1,7 +1,7 @@
 var iconExpanded = "assets/icon/arrow-expanded.png";
 var iconCollapsed = "assets/icon/arrow-collapsed.png";
 
-
+//Function to toggle the accordion/expandable content section to show/hide content
 function expandToggle(id){
   this.id = id;
   var panel = document.getElementById(id +"panel");
