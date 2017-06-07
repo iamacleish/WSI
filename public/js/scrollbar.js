@@ -3,9 +3,9 @@ var srcImgB = "assets/jpg/product-large-b.jpg";
 var srcImgC = "assets/jpg/product-large-c.jpg";
 var srcImgD = "assets/jpg/product-large-d.jpg";
 var productNameA = "Williams-Sonoma Classic Apron, French Blue"
-var productNameB = "Williams Sonoma Stripe Apron, Black"
-var productNameC = "Williams Sonoma Stripe Apron, Sage"
-var productNameD = "Williams Sonoma Bay Stripe Apron, Claret"
+var productNameB = "Williams-Sonoma Stripe Apron, Black"
+var productNameC = "Williams-Sonoma Stripe Apron, Sage"
+var productNameD = "Williams-Sonoma Bay Stripe Apron, Claret"
 
 
 function changeImage(id){
