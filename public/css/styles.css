@@ -33,6 +33,9 @@ nav.nav-bar {
       font-size: 0; }
     nav.nav-bar ul li:last-child {
       padding-left: 1px; }
+      nav.nav-bar ul li:last-child a {
+        padding-right: 12px;
+        padding-left: 12px; }
   nav.nav-bar a {
     color: #fff;
     display: inline-block;
@@ -44,7 +47,7 @@ nav.nav-bar {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-right: 8px;
+    padding-right: 9px;
     padding-left: 8px;
     background-color: #343434; }
   nav.nav-bar a:hover {
@@ -196,6 +199,7 @@ footer {
     color: #505050; }
   footer ul {
     width: 100%;
+    padding-right: 10px;
     font-size: 10px;
     font-family: Flama,Helvetica,Arial,sans-serif;
     padding-bottom: 14px; }
